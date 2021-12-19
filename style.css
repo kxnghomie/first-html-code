@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+body {
+    background-color: #f1f1f1;
+    color: #0f131e;
+
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+
+    /* font: normal 18px 'Roboto', sans-serif; */
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: line-through;
+}
+
+a:active {
+    color: seagreen;
+}
+
+a:visited {
+    color: gray;
+}
+
+.mainpic {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 20px rgb(255, 251, 0);
+}
+
+#secondarypic {
+    width: 200px;
+    border-radius: 15px;
+}
+
+.hr {
+    margin-bottom: 40px;
+}
+
+.intro {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 700px) {
+    .intro {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .intro-block {
+        margin-left: none;
+    }
+}
+
+.intro-block {
+    margin-left: 50px;
+}
+
+.intro-block h4 {
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+
+.intro p {
+    color: #86898f;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    /* text-decoration: line-through underline; */
+    text-decoration: none;
+    text-transform: capitalize;
+    /* letter-spacing: 15px; */
+    /* word-spacing: 10px; */
+}
+
+/* box model */
+.container {
+    max-width: 75%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+/* .list1 {
+    background: green; */
+    /* padding: 15px; */
+    /* padding: 15px 40px; */
+    /* padding: 10px 15px 25px 50px; */
+    /* padding-top: 50px;
+    padding-right: 60px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+    margin: 20px; */
+    /* border: 10px solid red;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-right-style: outset;
+    border-top-style: groove; */
+    /* border-top-width: 20px;
+    border-top-right-radius: 15%;
+    border-top-color: seagreen;
+} */
+
+/* .box-model > div {
+    float: left;
+    background: black;
+    height: 200px;
+    border: 4px solid green;
+    width: 25%;
+    box-sizing: border-box;
+} */
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+.bg-green {
+    background: #e5ffe7;
+}
+
+.bg-red {
+    background: #ffe5e5;
+}
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.card h2 {
+    margin-bottom: 40px;
+}
+
+.list {
+    padding: 0 25px;
+    list-style: upper-alpha;
+}
+
+.list li {
+    color: rgb(6, 92, 133);
+    margin-bottom: 20px;
+    border-bottom: 5px solid peru;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2), .table td:nth-child(3) {
+    color: rebeccapurple;
+}
+
+.table tr:nth-child(odd) {
+    background: pink;
+}
+
+.ndpagelink {
+    text-decoration: line-through;
+}
+
+.link-list {
+    list-style: none;
+    padding: 10;
+}
+
+.link-list li {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid purple;
+}
+
+.food h2 {
+    text-align: center;
+}
+
+.from-group label {
+     display: block;
+     font-size: 25px;
+     color: sandybrown;
+}
+
+.from-group input, .from-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    /* background: transparent; */
+    border-bottom: 5px solid #ccc;
+    color: black;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.yolo {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.yolo > .from-group {
+    width: 50%;
+}
+
+.yolo > .from-group:first-child {
+    margin-right: 20px;
+}
+
+.btn {
+    color: white;
+    background: black;
+    padding: 15px 20px;
+    border: 20px pink ridge;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.3;
+}
+
+/* position */
+/* .position {
+    border: 5px solid black;
+    margin-top: 50px;
+    padding: 20px;
+    position: relative;
+    height: 300px;
+} */
+
+/* .box {
+    width: 100%;
+    height: 50px;
+    background: lightcoral;
+    position: fixed; */
+    /* top: 700px;
+    left: 300px; */
+    /* top : 0;
+    right: 0;
+} */

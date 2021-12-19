@@ -3,29 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>First HTML code</title>
+    <!-- <style>
+        body {
+            background: purple;
+        }
+
+        h1 {
+            color: sandybrown;
+        }
+    </style> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table cellspacing="50">
-        <tr>
-            <td>
-                <img src="photo.jpg" alt="my photo" width="200">
-            </td>
-            <td>
-                <h1>Andrii Kucher</h1>
-    <p><em> just started learning HTML. This line is created with paragraph and em tags</em></p>
-            </td>
-        </tr>
-    </table>
-    <img src="https://i1.sndcdn.com/avatars-6n8N1FycxsfSW3Pr-dI9Bsg-t240x240.jpg" width="200">
+    <div class="container">
+    <div class="intro">
+        <img src="photo.jpg" alt="my photo" class="mainpic"/>
+        <div class="intro-block">    
+            <h1>Andrii Kucher</h1>
+            <p>started learning HTML.</p>
+            <p><strong>Let's learn it together</strong></p>
+            <h4>My Links</h4>
+                <a class="bg-red" href="https://www.youtube.com/watch?v=YXcHmspJsG8&ab_channel=typicaldrake" target="_blank">Parking Lot Love</a>
+                <a class="bg-green" href="https://www.youtube.com/watch?v=oUqH0_SH6KA&ab_channel=typicaldrake" target="_blank">Mood</a>
+        </div>
+    </div>
+            
+    <!-- <img src="https://i1.sndcdn.com/avatars-6n8N1FycxsfSW3Pr-dI9Bsg-t240x240.jpg" id="secondarypic">
     <h1>Andrii Kucher</h1>
-    <p><em> just started learning HTML. This line is created with paragraph and em tags</em></p>
-    <p><strong>Let's learn it together</strong></p>
-
+    <p><em> just started learning HTML. This line is created with paragraph and em tags</em></p> -->
+    <!-- <p><strong>Let's learn it together</strong></p>
+    <h4>My Links</h4>
+        <a class="bg-red" href="https://www.youtube.com/watch?v=YXcHmspJsG8&ab_channel=typicaldrake" target="_blank">Parking Lot Love</a>
+        |
+        <a class="bg-green" href="https://www.youtube.com/watch?v=oUqH0_SH6KA&ab_channel=typicaldrake" target="_blank">Mood</a> -->
     <hr>
     <br>
     <br>
 
 
+    <div class="list1">
     <h2>Let's create a list</h2>
     <ul type="square">
         <li>Number one</li>
@@ -34,22 +50,23 @@
         <li>You can check out my music below as well</li>
         <li><a href="https://onerpm.link/9823511108" target="_blank">Click here!</a></li>        
     </ul>
+    </div>
 
     <br>
-    <hr>
-    <br>
+    <hr class="hr">
+    <div class="card bg-yellow">
     <h2>Now let's create a numbered list</h2>
-    <ol>
+    <ol class="list">
         <li>I like bananas</li>
         <li>I play bball</li>
         <li>I got COVID</li>
     </ol>
-    <br>
-    <hr>
-    <br>
+    </div>
+   
+    <div class="card bg-green">
     <h2>Let's create a table</h2>
     <p>and use it as a work experience reference</p>
-        <table border="5">
+        <table border="5" class="table">
             <thead>
                 <tr>
                     <th>Company Name</th>
@@ -68,38 +85,81 @@
                     <td>English Lecturer</td>
                     <td>2017-2022</td>
                 </tr>
+                <tr>
+                    <td>WezArt</td>
+                    <td>Copywriter</td>
+                    <td>2019 - 2021</td>
+                </tr>
+                <tr>
+                    <td>PAX</td>
+                    <td>Volunteer</td>
+                    <td>2012 - 2013</td>
+                </tr>
             </tbody>
             <!-- <tfoot>what is it</tfoot> -->
         </table>
+    </div>
     
+    <div class="card bg-red">
+    <h2>Let's create a second page</h2>
+    <a href="second page.html" class="ndpagelink">Check it here</a>
+    <p>fuck the second page. let's stay here bro</p>
+    <ul class="link-list">
+        <li><a href="https://www.youtube.com/watch?v=YXcHmspJsG8&ab_channel=typicaldrake" target="_blank">Parking Lot Love</a></li>
+        <li><a href="https://www.youtube.com/watch?v=oUqH0_SH6KA&ab_channel=typicaldrake" target="_blank">Mood</a></li>
+        <li><a href="https://www.youtube.com/watch?v=tmZXB2SnwAQ&ab_channel=typicaldrake" target="_blank">Day Is Us</a></li>
+        </ul>
+    </div>    
+    
+    <div class="food">    
     <h2>Do you want to order some food?</h2>
     <form action="/">
-        <label for="name">Your name</label>
-        <input type="text" id="name" placeholder='Type Your Name Here'>
-        <br>
-        <label for="food">Food You Want</label>
-        <input type="text" id="food" placeholder='Type Your Food Here'>
-        <br>
-        <label for="note">Leave a Note</label>
-        <br>
-        <textarea name="" id="note" cols="8" rows="3"></textarea>        <br>
-        <label for="veg">Vegetarian</label>
-        <input type="checkbox" id="veg">
-        <br>
-        <label for="card">Lunch Card</label>
-        <input type="radio" id="card">
-        <br>
-        <input type="submit" value="Let's Eat">
-    </form>      
+        <div class="yolo">
+            <div class="from-group">
+                <label for="name">Your name</label>
+                <input type="text" id="name" placeholder='Type Your Name Here'>
+            </div>
+            <div class="from-group">
+                <label for="food">Food You Want</label>
+                <input type="text" id="food" placeholder='Type Your Food Here'>
+            </div>
+        </div>
+        <div class="from-group">
+            <label for="note">Leave a Note</label>
+            <textarea name="" id="note" cols="8" rows="3"></textarea>        <br>
+        </div>
+        <div class="from-group">
+            <label for="veg">Vegetarian</label>
+            <input type="checkbox" id="veg">
+            <br>
+            <label for="card">Lunch Card</label>
+            <input type="radio" id="card">
+        </div>
+        <input class="btn" type="submit" value="Let's Eat">
+    </form>
+    </div>
+    <!-- <br>
+    <br>
 
+    <div class="box-model">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div> -->
+
+    <div class="position">
+        <div class="box"></div>
+    </div>
+</div>
+    
+    <div style="margin-bottom: 500px;"></div>
 
     <br>
     <hr size="15" color="blue">
     <hr size="15" color="red">
     <hr size="15" color="yellow">
     <br>
-    <h2>Let's create a second page</h2>
-    <a href="second page.html">Check it here</a>
 
 </body>
 </html>
